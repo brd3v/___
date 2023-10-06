@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh; /* Ajusta a altura mínima para ocupar toda a tela verticalmente */
+    font-weight: bold;
+}
+
+nav {
+    height: 40px; /* Define a altura desejada para o nav */
+    background-color: #333; /* Cor de fundo do nav */
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    flex-grow: 1; /* Permite que o conteúdo abaixo do nav ocupe o restante da tela */
+}
+
+img {
+    max-width: 100%;
+    max-height: 350px;
+    height: 50%;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #fff;
+    text-align: center;
+    font-size: 1px;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: orange;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+a {
+
+cursor: pointer;
+}
+
+@keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  a.pulsate {
+    animation: pulse 1s infinite; /* Aplica a animação pulsate com duração de 1 segundo, infinitamente */
+    display: inline-block; /* Para aplicar a animação a elementos inline como links */
+    text-decoration: none; /* Remover sublinhado padrão de links */
+    color: #ff5733; /* Cor do link */
+  }
+  
+
