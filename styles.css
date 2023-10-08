@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    width: 100%;
+    background-color: #15242b;
+    font-family: Roboto, sans-serif;
+    
+}
+
+section{
+    max-width: 600px;
+    width: 100%;
+}
+
+.one img{
+    height: 300px;
+
+}
+
+.one{
+    height: 98vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+    color: #Fff;
+    padding: 1rem;
+}
+.one h2{
+    font-size: 22px;
+    text-align: center;
+}
+.one h2 strong{
+    color: orange;
+}
+.one a img{
+    height: 50px;
+   
+}
+.one p{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+
+.one a{
+    color: #fff;
+    border: 3px solid #fff;
+    display: flex;
+    justify-content: center; text-decoration: none;
+    font-weight: bold;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    border-radius: 20px;
+    padding: 1rem;
+    margin-top: 2rem;
+    background-color: #0ba540;
+    font-size: 15px;
+    cursor: pointer;
+}
+.one a:hover{
+    background-color: orange;
+    transition: .3s ease ease-in;
+}
+
+
+
+@keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  a.pulsate {
+    animation: pulse 1s infinite; /* Aplica a animação pulsate com duração de 1 segundo, infinitamente */
+    display: inline-block; /* Para aplicar a animação a elementos inline como links */
+    text-decoration: none; /* Remover sublinhado padrão de links */
+    color: #ff5733; /* Cor do link */
+  }
+  
